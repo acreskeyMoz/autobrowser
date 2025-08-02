@@ -1,6 +1,6 @@
 # Website Tab Loader Browser Extension
 
-A cross-browser extension (Chrome/Firefox) that automatically loads the top 100 websites in tabs with controlled cycling. The extension opens websites one by one, waits 5 seconds between loads, and manages tab count by closing older tabs.
+A cross-browser extension (Chrome/Firefox) that automatically loads the top 1000 websites in tabs with controlled cycling. The extension opens websites one by one, waits 5 seconds between loads, and manages tab count by closing older tabs.
 
 ## ⚠️ Important Notice
 
@@ -8,21 +8,13 @@ This extension is designed for educational and testing purposes. It opens many t
 
 ## Features
 
-- Loads top 100 popular websites automatically
+- Loads top 1000 popular websites automatically
 - 5-second delay between each website load
-- Smart tab management: keeps only 2 tabs open at a time
+- Smart tab management: keeps maximum of 50 tabs open at a time
 - Start/stop controls through popup interface
 - Real-time status updates
 
 ## Installation
-
-### Chrome Installation
-
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable "Developer mode" (toggle in top right)
-3. Click "Load unpacked"
-4. Select the folder containing this extension
-5. The extension icon should appear in your toolbar
 
 ### Firefox Installation
 
@@ -34,6 +26,14 @@ This extension is designed for educational and testing purposes. It opens many t
 
 **Note for Firefox**: For permanent installation, you would need to sign the extension through Mozilla's AMO (addons.mozilla.org) process.
 
+### Chrome Installation
+
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable "Developer mode" (toggle in top right)
+3. Click "Load unpacked"
+4. Select the folder containing this extension
+5. The extension icon should appear in your toolbar
+
 ## Usage
 
 1. Click the extension icon in your browser toolbar
@@ -44,9 +44,9 @@ This extension is designed for educational and testing purposes. It opens many t
 
 ### Debugging
 
-**Chrome**: Navigate to `chrome://extensions/`, find the extension, and click "Inspect views: background page" to access developer tools.
-
 **Firefox**: Navigate to `about:debugging`, find the extension under "Temporary Extensions", and click "Inspect" to access developer tools.
+
+**Chrome**: Navigate to `chrome://extensions/`, find the extension, and click "Inspect views: background page" to access developer tools.
 
 ## File Structure
 
@@ -60,7 +60,7 @@ This extension is designed for educational and testing purposes. It opens many t
 
 ## How It Works
 
-1. **Tab Management**: Opens new tabs for each website while maintaining a maximum of 2 open tabs
+1. **Tab Management**: Opens new tabs for each website while maintaining a maximum of 50 open tabs
 2. **Timing**: Waits exactly 5 seconds between each website load
 3. **Cleanup**: Automatically closes older tabs to prevent browser overload
 4. **Control**: Provides start/stop functionality through the popup interface
@@ -75,7 +75,7 @@ The extension requires the following permissions:
 
 ## Customization
 
-To modify the website list, edit the `TOP_100_WEBSITES` array in `background.js`.
+To modify the website list, edit the `TOP_1000_WEBSITES` array in `background.js`.
 
 ## Troubleshooting
 

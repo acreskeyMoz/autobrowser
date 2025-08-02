@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (result.isRunning) {
       startBtn.disabled = true;
       stopBtn.disabled = false;
-      status.textContent = `Running... (Site ${result.currentIndex || 0}/100)`;
+      status.textContent = `Running... (Site ${result.currentIndex || 0}/1000)`;
     }
   });
 
