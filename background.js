@@ -8,10 +8,8 @@ const TOP_100_WEBSITES = [
   'https://wikipedia.org',
   'https://yandex.ru',
   'https://yahoo.com',
-  'https://xvideos.com',
   'https://whatsapp.com',
   'https://amazon.com',
-  'https://pornhub.com',
   'https://live.com',
   'https://linkedin.com',
   'https://netflix.com',
@@ -81,12 +79,11 @@ const TOP_100_WEBSITES = [
   'https://monster.com',
   'https://coursera.org',
   'https://udemy.com',
-  'https://khan academy.org',
+  'https://khanacademy.org',
   'https://duolingo.com',
   'https://ted.com',
   'https://hulu.com',
   'https://disneyplus.com',
-  'https://hbo.com',
   'https://primevideo.com',
   'https://peacocktv.com',
   'https://paramountplus.com',
@@ -100,7 +97,17 @@ const TOP_100_WEBSITES = [
   'https://roblox.com',
   'https://minecraft.net',
   'https://battle.net',
-  'https://origin.com'
+  'https://origin.com',
+  'https://slack.com',
+  'https://telegram.org',
+  'https://snapchat.com',
+  'https://skype.com',
+  'https://signal.org',
+  'http://example.com',
+  'http://httpbin.org',
+  'http://neverssl.com',
+  'https://atlassian.com',
+  'https://trello.com'
 ];
 
 let isRunning = false;
