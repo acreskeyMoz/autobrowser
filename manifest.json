@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Website Tab Loader",
+  "version": "1.0",
+  "description": "Loads top websites in tabs with controlled cycling",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Website Tab Loader"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

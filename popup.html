@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px 0;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    button:disabled {
+      background: #cccccc;
+      cursor: not-allowed;
+    }
+    .status {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .warning {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      color: #856404;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Website Tab Loader</h3>
+  
+  <div class="warning">
+    ⚠️ This extension opens many tabs. Use responsibly and ensure adequate system resources.
+  </div>
+  
+  <button id="startBtn">Start Loading Websites</button>
+  <button id="stopBtn" disabled>Stop Loading</button>
+  
+  <div class="status" id="status">Ready to start</div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
